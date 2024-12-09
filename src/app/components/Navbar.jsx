@@ -1,7 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
 import LogoEthneen from '../../../public/images/LogoEthneen.svg'
-import searchIcon from '../../../public/images/searchIcon.svg'
+import searchIcon from '../../../public/images/searchIcon.png'
+import messageIcon from '../../../public/images/messageIcon.svg'
+import bookMarkIcon from '../../../public/images/bookMarkIcon.svg'
+import bellIcon from '../../../public/images/bellIcon.svg'
+import userImage from '../../../public/images/userImage.svg'
+
+
 
 export const Navbar = () => {
   return (
@@ -30,19 +36,14 @@ export const Navbar = () => {
             <div className="headerDivTwo flex items-center gap-[4px]">
                 <div className='toggleDiv flex items-center gap-[8px]'>
                 <h5>Ready to work</h5>
-                <div className='flex  p-[8px] justify-center items-center'>
-                <Image src={searchIcon} alt="" className='w-[20px] h-[20px]'/>
+                <Image src={messageIcon} alt="" className='w-[50px] h-[50px]'/>
+                <Image src={bookMarkIcon} alt="" className='w-[50px] h-[50px]'/>
+                <Image src={searchIcon} alt="" className='w-[50px] h-[50px]'/>
+                <Image src={bellIcon} alt="" className='w-[50px] h-[50px]'/>
+                <Image src={userImage} alt="" className='w-[50px] h-[50px]'/>
+
                 </div>
-                <div className='flex  p-[8px] justify-center items-center'>
-                <Image src={searchIcon} alt="" className='w-[20px] h-[20px]'/>
-                </div>
-                <div className='flex  p-[8px] justify-center items-center'>
-                <Image src={searchIcon} alt="" className='w-[20px] h-[20px]'/>
-                </div>
-                <div className='flex  p-[8px] justify-center items-center'>
-                <Image src={searchIcon} alt="" className='w-[20px] h-[20px]'/>
-                </div>
-                </div>
+                 
                 
 
             </div>

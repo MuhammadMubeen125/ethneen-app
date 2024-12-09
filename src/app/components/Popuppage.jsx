@@ -5,7 +5,7 @@ import LogoEthneen from '../../../public/images/LogoEthneen.svg'
 import StarIcon from '../../../public/images/starIcon.svg'
 import HelpIcon from '../../../public/images/HelpIcon.svg'
 
-export const Projectform = () => {
+export const Popuppage = () => {
   return (
     <div className='signupMain flex items-center flex-shrink-0 self-stretch'>
         <section className='signUpSectionOne flex max-w-[440px] flex-col justify-between items-start flex-1 self-stretch'>

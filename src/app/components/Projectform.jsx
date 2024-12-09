@@ -54,7 +54,7 @@ export const Projectform = () => {
                 <div className="formmainDiv flex flex-col w-[576px] items-start gap-[32px]">
                     <div className="headerDiv flex w-full justify-between items-center self-stretch">
                         <h5>Project Intro</h5>
-                        <Link href="/dashboard" className='GreenBtn'>
+                        <Link href="/popup" className='GreenBtn'>
                         <Image src={StarIcon} alt="" className='w-[20px] h-[20px]'/>
                    <span>Write with Noor</span></Link>
                     </div>
