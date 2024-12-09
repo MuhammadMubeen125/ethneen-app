@@ -21,7 +21,7 @@ export const DashboardPage = () => {
                     <h5>Welcome back, Afifa</h5>
                     <p>Monitor your jobs, orders and payment history. </p>
                 </div>
-                <Link href="/dashboard" className='dashboardBtn'>
+                <Link href="/dashboard" className='GreenBtn'>
                    <span>Upgrade to Ethneen Pro</span></Link>
             </div>
 
