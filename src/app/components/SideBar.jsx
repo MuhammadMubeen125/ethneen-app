@@ -11,6 +11,9 @@ import SB7 from '../../../public/images/SB7.svg'
 import SB8 from '../../../public/images/SB8.svg'
 import SB9 from '../../../public/images/SB9.svg'
 import SB10 from '../../../public/images/SB10.svg'
+import supportIcon from '../../../public/images/supportIcon.svg'
+import settingIcon from '../../../public/images/settingIcon.svg'
+import userImage from '../../../public/images/userImage.svg'
 
 
 export const SideBar = () => {
@@ -70,6 +73,31 @@ export const SideBar = () => {
                     </li>
 
                 </ul>
+            </div>
+
+            <div className="infoDiv flex p-[16px] flex-col items-start gap-[24px] self-stretch">
+                <ul className='navLinkFooter ps-[10px] flex flex-col items-start gap-[10px] self-stretch'>
+                  <li>English</li>
+                  <li className='flex gap-[8px]'>
+                  <Image src={supportIcon} alt="" className='imgTen w-[24px] h-[24px]'/>
+                  <span>Support</span>
+                  </li>
+                  <li className='flex gap-[8px]'>
+                  <Image src={settingIcon} alt="" className='imgTen w-[24px] h-[24px]'/>
+                  <span>Settings</span>
+                  </li>
+                </ul>
+
+                <div className='flex pt-6 pr-8 pb-6 pl-2 items-center gap-[16px] self-stretch'>
+                  <div className='userIconDivFOoter flex items-center gap-[12px] flex-1'>
+                  <Image src={userImage} alt="" className='w-[50px] h-[50px]'/>
+                  <div className="textDiv flex flex-col items-start">
+                    <h5>Afifa</h5>
+                    <p>afifa@ethneen.com</p>
+                  </div>
+                  </div>
+                </div>
+            
             </div>
         </div>
     </div>
