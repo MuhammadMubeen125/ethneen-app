@@ -75,7 +75,7 @@ export const DashboardPage = () => {
                 </div>
             </div>
 
-            <div className="dashStatsContainer flex p-[32px] items-center gap-[24px] self-stretch">
+            <div className="dashStatsContainer w-full flex p-[32px] items-center justify-center gap-[24px] self-stretch">
                 <div className="orderStatDiv max-w-[712px] flex flex-col items-start flex-1">
                     <div className="orderStateHeading flex pt-5 pr-6 pb-5 pl-6">
                     <div className="orderStateHeadingText w-[434px] flex h-[52px] flex-col justify-center items-start gap-[4px] flex-1">
