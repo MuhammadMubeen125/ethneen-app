@@ -6,7 +6,7 @@ import LogoEthneen from '../../../public/images/LogoEthneen.svg'
 export const PageOne = () => {
   return (
     <div className='signupMain flex h-[650px] items-center flex-shrink-0 self-stretch'>
-        <section className='signUpSectionOne flex max-w-[440px] flex-col justify-between items-start flex-1 self-stretch'>
+        <section className='signUpSectionOne flex h-[100vh] max-w-[440px] flex-col justify-between items-start flex-1 self-stretch'>
             <div className="ConainerSignup flex pt-8 pb-0 px-8 flex-col items-start gap-[80px] self-stretch">
             <Image src={LogoEthneen} alt="" className='w-[142px] h-[32px]'/>
             <div className="subContainer flex pr-[32px] flex-col items-start gap-[32px] self-stretch">
@@ -75,9 +75,11 @@ export const PageOne = () => {
                         </div>
                     </div>
                 </div>
-
+                <div className='btnDiv w-[500px]'>
                 <Link href="/dashboard" className='GreenBtn'>
-                   <span>Continue</span></Link>
+                <span>Continue</span></Link>
+                </div>
+                
             </div>
 
         </section>
