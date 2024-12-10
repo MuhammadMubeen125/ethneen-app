@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Suisse Intl"; /* Name of your font */
+  src: url("/fonts/MyCustomFont.ttf") format("truetype"); /* Path to the font file */
+  font-weight: normal; /* Optional */
+  font-style: normal; /* Optional */
+}
+
+body {
+  font-family: "Suisse Intl", sans-serif; /* Apply font globally */
+}
+
 .signUpSectionOne {
   background: var(--Colors-Background-bg-secondary, #f9fafb);
 }
@@ -169,8 +180,20 @@ p {
 }
 
 .sideBarNav {
+  height: 100vh; /* Full height of the viewport */
+  position: sticky; /* Keep the sidebar fixed */
+  top: 0;
+  overflow: hidden;
   border-right: 1px solid var(--Colors-Border-border-secondary, #e4e7ec);
   background: var(--Colors-Background-bg-primary, #fff);
+}
+
+.navFooterLinks {
+  display: flex;
+  padding: var(--spacing-md, 8px) var(--spacing-lg, 12px);
+  align-items: center;
+  gap: var(--spacing-md, 8px);
+  align-self: stretch;
 }
 
 .mainSectionDashboard {
@@ -247,6 +270,13 @@ p {
   /* Shadows/shadow-xs */
   box-shadow: 0px 1px 2px 0px
     var(--Colors-Effects-Shadows-shadow-xs, rgba(16, 24, 40, 0.05));
+
+  color: var(--colors-text-text-secondary-700, #344054);
+  text-align: center;
+  font-size: var(--Font-size-text-xs, 12px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--Line-height-text-xs, 18px); /* 150% */
 }
 
 .WhiteBtn {
@@ -325,6 +355,25 @@ p {
   line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
 }
 
+.custom-table tr {
+  width: 100%;
+}
+
+.status {
+  font-weight: bold;
+  display: flex;
+  width: fit-content;
+  padding: var(--spacing-xxs, 2px) var(--spacing-sm, 6px);
+  align-items: center;
+  gap: var(--spacing-xs, 4px);
+  border-radius: var(--radius-sm, 6px);
+  border: 1px solid var(--Colors-Border-border-primary, #d0d5dd);
+  background: var(--Colors-Background-bg-primary, #fff);
+
+  /* Shadows/shadow-xs */
+  box-shadow: 0px 1px 2px 0px
+    var(--Colors-Effects-Shadows-shadow-xs, rgba(16, 24, 40, 0.05));
+}
 .projectDiv {
   border-radius: var(--radius-xl, 12px);
   border: 1px solid var(--Colors-Border-border-secondary, #e4e7ec);
@@ -394,7 +443,29 @@ p {
 
 .navLink:hover {
   border-radius: var(--radius-sm, 6px);
-  background: var(--Tertiary, #004b23);
+  background: linear-gradient(
+      272deg,
+      #004b23 -23.05%,
+      #0e5d1f 11.01%,
+      rgba(83, 165, 24, 0.7) 46.59%,
+      #024d22 74.05%,
+      #004b23 140.41%
+    ),
+    #004b23;
+
+  /* Shadows/shadow-xs-skeuomorphic */
+  box-shadow: 0px 0px 0px 1px
+      var(
+        --Colors-Effects-Shadows-shadow-skeumorphic-inner-border,
+        rgba(16, 24, 40, 0.18)
+      )
+      inset,
+    0px -2px 0px 0px var(
+        --Colors-Effects-Shadows-shadow-skeumorphic-inner,
+        rgba(16, 24, 40, 0.05)
+      ) inset,
+    0px 1px 2px 0px
+      var(--Colors-Effects-Shadows-shadow-xs, rgba(16, 24, 40, 0.05));
 }
 
 .navLink:hover .imgOne {

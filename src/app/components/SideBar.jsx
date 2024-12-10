@@ -78,11 +78,11 @@ export const SideBar = () => {
             <div className="infoDiv flex p-[16px] flex-col items-start gap-[24px] self-stretch">
                 <ul className='navLinkFooter ps-[10px] flex flex-col items-start gap-[10px] self-stretch'>
                   <li>English</li>
-                  <li className='flex gap-[8px]'>
+                  <li className='navFooterLinks'>
                   <Image src={supportIcon} alt="" className='imgTen w-[24px] h-[24px]'/>
                   <span>Support</span>
                   </li>
-                  <li className='flex gap-[8px]'>
+                  <li className='navFooterLinks'>
                   <Image src={settingIcon} alt="" className='imgTen w-[24px] h-[24px]'/>
                   <span>Settings</span>
                   </li>

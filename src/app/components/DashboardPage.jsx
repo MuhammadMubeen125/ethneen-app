@@ -7,6 +7,7 @@ import ArrowIcon from '../../../public/images/arrow-narrow-up-right.svg'
 import PencilIcon from '../../../public/images/pencilIcon.svg'
 import greenArrow from '../../../public/images/greenArrow.svg'
 import redArrow from '../../../public/images/redArrow.svg'
+import greenDot from '../../../public/images/greenDot.svg'
 import { SideBar } from './SideBar'
 
 export const DashboardPage = () => {
@@ -75,10 +76,10 @@ export const DashboardPage = () => {
                 </div>
             </div>
 
-            <div className="dashStatsContainer w-full flex p-[32px] items-center justify-center gap-[24px] self-stretch">
-                <div className="orderStatDiv max-w-[712px] flex flex-col items-start flex-1">
-                    <div className="orderStateHeading flex pt-5 pr-6 pb-5 pl-6">
-                    <div className="orderStateHeadingText w-[434px] flex h-[52px] flex-col justify-center items-start gap-[4px] flex-1">
+            <div className="dashStatsContainer w-full flex px-[32px] py-0 gap-[24px] self-stretch">
+                <div className="orderStatDiv flex-1 flex flex-col items-start">
+                    <div className="orderStateHeading w-full flex pt-5 pr-6 pb-5 pl-6">
+                    <div className="orderStateHeadingText w-[434px] flex  flex-col justify-center items-start gap-[4px] flex-1">
                         <div className='flex flex-row items-center gap-[8px]'>
                             <h5>Latest Orders</h5>
                             <span className='orderCounter p-[2px_6px] items-center'>
@@ -88,25 +89,26 @@ export const DashboardPage = () => {
                         <p>Keep track of your orders and their payment status.</p>
                     </div>
                     
-                    <div className='statsBtnDiv flex items-center gap-[12px]'>
+                    <div className='statsBtnDiv h-[42.5px] flex items-center gap-[12px]'>
                     <Link href="#" className='WhiteBtn'>
                    <span>View all</span></Link>
                     
                     <Link href="#" className='GreenBtn'>
                    <span className='flex gap-[4px]'>
                    <Image src={plusSign} alt="" className='w-[20px] h-[20px]'/>
-                    Add order   </span></Link>
+                    Add order</span></Link>
                     </div>
                     </div>
 
-                    <div className="statsTableDiv flex items-start self-stretch">
-                    <table className="custom-table">
+                    <div className="statsTableDiv w-full ">
+                    <table className="custom-table w-full">
       <thead>
-        <tr>
+        <tr className='text-left'>
           <th>Budget</th>
           <th>Delivery Time</th>
           <th>Date Created</th>
           <th>Payment Status</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -114,7 +116,9 @@ export const DashboardPage = () => {
           <td>$50.00</td>
           <td>3 days</td>
           <td>22 Jan 2024</td>
-          <td><span className="status completed">● Completed</span></td>
+          <td><span className="status Compeleted flex">
+          <Image src={greenDot} alt="" className='w-[8px] h-[8px]'/>
+             Completed</span></td>
           <td><Image src={ArrowIcon} alt="" className='w-[20px] h-[20px]'/>
           </td>
         </tr>
@@ -122,7 +126,9 @@ export const DashboardPage = () => {
           <td>$200.00</td>
           <td>Less than a week</td>
           <td>20 Jan 2024</td>
-          <td><span className="status completed">● Completed</span></td>
+          <td><span className="status Compeleted flex">
+          <Image src={greenDot} alt="" className='w-[8px] h-[8px]'/>
+             Completed</span></td>
           <td><Image src={ArrowIcon} alt="" className='w-[20px] h-[20px]'/>
           </td>
         </tr>
@@ -130,7 +136,9 @@ export const DashboardPage = () => {
           <td>$123.00</td>
           <td>3 days</td>
           <td>24 Jan 2024</td>
-          <td><span className="status completed">● Completed</span></td>
+          <td><span className="status Compeleted flex">
+          <Image src={greenDot} alt="" className='w-[8px] h-[8px]'/>
+             Completed</span></td>
           <td><Image src={ArrowIcon} alt="" className='w-[20px] h-[20px]'/>
           </td>
         </tr>
@@ -138,7 +146,9 @@ export const DashboardPage = () => {
           <td>$200.00</td>
           <td>3 days</td>
           <td>26 Jan 2024</td>
-          <td><span className="status completed">● Completed</span></td>
+          <td><span className="status Compeleted flex">
+          <Image src={greenDot} alt="" className='w-[8px] h-[8px]'/>
+             Completed</span></td>
           <td><Image src={ArrowIcon} alt="" className='w-[20px] h-[20px]'/>
           </td>
         </tr>
@@ -146,7 +156,9 @@ export const DashboardPage = () => {
           <td>$300.00</td>
           <td>3 days</td>
           <td>18 Jan 2024</td>
-          <td><span className="status completed">● Completed</span></td>
+          <td><span className="status Compeleted flex">
+          <Image src={greenDot} alt="" className='w-[8px] h-[8px]'/>
+             Completed</span></td>
           <td><Image src={ArrowIcon} alt="" className='w-[20px] h-[20px]'/>
           </td>
         </tr>
@@ -154,7 +166,9 @@ export const DashboardPage = () => {
           <td>$50.00</td>
           <td>Less than a week</td>
           <td>28 Jan 2024</td>
-          <td><span className="status completed">● Completed</span></td>
+          <td><span className="status Compeleted flex">
+          <Image src={greenDot} alt="" className='w-[8px] h-[8px]'/>
+             Completed</span></td>
           <td><Image src={ArrowIcon} alt="" className='w-[20px] h-[20px]'/>
           </td>
         </tr>
@@ -182,8 +196,9 @@ export const DashboardPage = () => {
                     </div>
                     <table class="project-table flex flex-col item-start">
       <thead>
-        <tr>
+        <tr className='flex'>
           <th>Project Title</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
