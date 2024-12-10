@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import plusSign from '../../../public/images/plusSign.svg'
 import ArrowIcon from '../../../public/images/arrow-narrow-up-right.svg'
+import PencilIcon from '../../../public/images/pencilIcon.svg'
 import { SideBar } from './SideBar'
 
 export const DashboardPage = () => {
@@ -173,25 +174,26 @@ export const DashboardPage = () => {
       </thead>
       <tbody>
         <tr>
-          <td>Looking for Webflow Designer <span class="edit-icon">✎</span></td>
+          <td>Looking for Webflow Designer <Image src={PencilIcon} alt="" className='w-[20px] h-[20px]'/>
+          </td>
         </tr>
         <tr>
-          <td>Testing hourly job <span class="edit-icon">✎</span></td>
+          <td>Testing hourly job <Image src={PencilIcon} alt="" className='w-[20px] h-[20px]'/></td>
         </tr>
         <tr>
-          <td>Hourly job <span class="edit-icon">✎</span></td>
+          <td>Hourly job <Image src={PencilIcon} alt="" className='w-[20px] h-[20px]'/></td>
         </tr>
         <tr>
-          <td>E-Commerce Store Project in Laravel and VueJS 3 for hourly basis <span class="edit-icon">✎</span></td>
+          <td>E-Commerce Store Project in Laravel and VueJS 3 for hourly basis <Image src={PencilIcon} alt="" className='w-[20px] h-[20px]'/></td>
         </tr>
         <tr>
-          <td>I need a highly experienced Laravel developer for hourly basis <span class="edit-icon">✎</span></td>
+          <td>I need a highly experienced Laravel developer for hourly basis <Image src={PencilIcon} alt="" className='w-[20px] h-[20px]'/></td>
         </tr>
         <tr>
-          <td>Looking for Webflow Designer <span class="edit-icon">✎</span></td>
+          <td>Looking for Webflow Designer <Image src={PencilIcon} alt="" className='w-[20px] h-[20px]'/></td>
         </tr>
         <tr>
-          <td>Testing hourly job <span class="edit-icon">✎</span></td>
+          <td>Testing hourly job <Image src={PencilIcon} alt="" className='w-[20px] h-[20px]'/></td>
         </tr>
       </tbody>
     </table>

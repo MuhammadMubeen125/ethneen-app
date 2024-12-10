@@ -464,3 +464,86 @@ p {
   box-shadow: 0px 1px 2px 0px
     var(--Colors-Effects-Shadows-shadow-xs, rgba(16, 24, 40, 0.05));
 }
+
+/* SAMPLE TESING POPUP */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup {
+  border-radius: var(--radius-xl, 12px);
+  background: #fff;
+  /* Shadows/shadow-xl */
+  box-shadow: 0px 20px 24px -4px var(--Colors-Effects-Shadows-shadow-xl_01, rgba(16, 24, 40, 0.08)),
+    0px 8px 8px -4px var(--Colors-Effects-Shadows-shadow-xl_02, rgba(16, 24, 40, 0.03));
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  min-width: 512px;
+  max-width: 512px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.popupDiv h2 {
+  color: var(--colors-text-text-primary-900, #101828);
+  font-size: var(--Font-size-text-lg, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--Line-height-text-lg, 28px); /* 155.556% */
+}
+
+.popupDiv p {
+  color: var(--colors-text-text-tertiary-600, #475467);
+  font-size: var(--Font-size-text-sm, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+}
+
+.Qpop {
+  border-radius: var(--radius-none, 0px) var(--radius-md, 8px)
+    var(--radius-md, 8px) var(--radius-md, 8px);
+  border: 1px solid var(--Colors-Border-border-secondary, #e4e7ec);
+  background: var(--Colors-Background-bg-secondary, #f9fafb);
+}
+
+.Qpop span {
+  color: var(--colors-text-text-primary-900, #101828);
+  font-size: var(--Font-size-text-md, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--Line-height-text-md, 24px); /* 150% */
+}
+
+.searchDiv {
+  background: var(--Colors-Background-bg-primary, #fff);
+}
+
+.searchInnerDiv {
+  border-radius: var(--radius-md, 8px);
+  border: 1px solid var(--Colors-Border-border-primary, #d0d5dd);
+  background: var(--Colors-Background-bg-primary, #fff);
+
+  /* Shadows/shadow-xs */
+  box-shadow: 0px 1px 2px 0px
+    var(--Colors-Effects-Shadows-shadow-xs, rgba(16, 24, 40, 0.05));
+}

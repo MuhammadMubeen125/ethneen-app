@@ -1,11 +1,16 @@
-import React from 'react'
+'use client';
+import React, { useState } from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
 import LogoEthneen from '../../../public/images/LogoEthneen.svg'
 import StarIcon from '../../../public/images/starIcon.svg'
 import HelpIcon from '../../../public/images/HelpIcon.svg'
+import Popup from '../components/Popup';
+import PopupContent from '../components/PopupContent';
 
 export const Projectform = () => {
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+
   return (
     <div className='signupMain flex items-center flex-shrink-0 self-stretch'>
         <section className='signUpSectionOne flex max-w-[440px] flex-col justify-between items-start flex-1 self-stretch'>
@@ -54,9 +59,14 @@ export const Projectform = () => {
                 <div className="formmainDiv flex flex-col w-[576px] items-start gap-[32px]">
                     <div className="headerDiv flex w-full justify-between items-center self-stretch">
                         <h5>Project Intro</h5>
-                        <Link href="/popup" className='GreenBtn'>
-                        <Image src={StarIcon} alt="" className='w-[20px] h-[20px]'/>
-                   <span>Write with Noor</span></Link>
+                        <Link href="#" className="GreenBtn" onClick={() => setIsPopupOpen(true)}>
+                <Image
+                  src={StarIcon}
+                  alt=""
+                  className="w-[20px] h-[20px]"
+                />
+                <span>Write with Noor</span>
+              </Link>
                     </div>
                     <div className='inputDiv flex flex-col items-start gap-[6px] self-stretch'>
                     <label htmlFor="Category">Select Category</label>
@@ -106,6 +116,10 @@ export const Projectform = () => {
             </div>
 
         </section>
+        <Popup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)}>
+        <PopupContent />
+      </Popup>
     </div>
+    
   )
 }
