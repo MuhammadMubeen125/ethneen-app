@@ -26,5 +26,5 @@ const PopupContent = () => {
     </div>
   );
 };
-
+// updated the code
 export default PopupContent;
