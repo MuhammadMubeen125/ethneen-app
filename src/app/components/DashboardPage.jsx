@@ -5,6 +5,8 @@ import Image from 'next/image'
 import plusSign from '../../../public/images/plusSign.svg'
 import ArrowIcon from '../../../public/images/arrow-narrow-up-right.svg'
 import PencilIcon from '../../../public/images/pencilIcon.svg'
+import greenArrow from '../../../public/images/greenArrow.svg'
+import redArrow from '../../../public/images/redArrow.svg'
 import { SideBar } from './SideBar'
 
 export const DashboardPage = () => {
@@ -31,7 +33,10 @@ export const DashboardPage = () => {
                     <h2>Wallet Balance</h2>
                     <div className='numberDIvCard flex items-end gap-[16px] flex-1'>
                     <p>$166.00</p>
-                    <span>12%</span>
+                    <span className='flex  items-center text-green-500'>
+                    <Image src={greenArrow} alt="" className='w-[20px] h-[20px]'/>
+
+                      12%</span>
                     </div>
                     
                 </div>
@@ -39,7 +44,10 @@ export const DashboardPage = () => {
                     <h2>Total Projects</h2>
                     <div className='numberDIvCard flex items-end gap-[16px] flex-1'>
                     <p>30</p>
-                    <span>12%</span>
+                    <span className='flex  items-center text-red-500'>
+                    <Image src={redArrow} alt="" className='w-[20px] h-[20px]'/>
+
+                      2</span>
                     </div>
                     
                 </div>
@@ -47,7 +55,10 @@ export const DashboardPage = () => {
                     <h2>Completed Orders</h2>
                     <div className='numberDIvCard flex items-end gap-[16px] flex-1'>
                     <p>18</p>
-                    <span>12%</span>
+                    <span className='flex  items-center text-green-500'>
+                    <Image src={greenArrow} alt="" className='w-[20px] h-[20px]'/>
+
+                      2</span>
                     </div>
                     
                 </div>
@@ -55,14 +66,17 @@ export const DashboardPage = () => {
                     <h2>Active Orders</h2>
                     <div className='numberDIvCard flex items-end gap-[16px] flex-1'>
                     <p>24</p>
-                    <span>12%</span>
+                    <span className='flex  items-center text-green-500'>
+                    <Image src={greenArrow} alt="" className='w-[20px] h-[20px]'/>
+
+                      2</span>
                     </div>
                     
                 </div>
             </div>
 
-            <div className="dashStatsContainer flex p-[32px] items-start gap-[24px] self-stretch">
-                <div className="orderStatDiv max-w-[700px] flex flex-col items-start flex-1">
+            <div className="dashStatsContainer flex p-[32px] items-center gap-[24px] self-stretch">
+                <div className="orderStatDiv max-w-[712px] flex flex-col items-start flex-1">
                     <div className="orderStateHeading flex pt-5 pr-6 pb-5 pl-6">
                     <div className="orderStateHeadingText w-[434px] flex h-[52px] flex-col justify-center items-start gap-[4px] flex-1">
                         <div className='flex flex-row items-center gap-[8px]'>
