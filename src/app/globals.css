@@ -168,6 +168,10 @@ p {
 .HeaderMain {
   border-bottom: 1px solid var(--Colors-Border-border-secondary, #e4e7ec);
   background: var(--Colors-Background-bg-primary, #fff);
+  position: sticky;
+  top: 0;
+  overflow-y: hidden;
+  z-index: 10;
 }
 
 .headerDivOne li {
@@ -466,6 +470,40 @@ p {
       ) inset,
     0px 1px 2px 0px
       var(--Colors-Effects-Shadows-shadow-xs, rgba(16, 24, 40, 0.05));
+}
+
+.active {
+  background: linear-gradient(
+      272deg,
+      #004b23 -23.05%,
+      #0e5d1f 11.01%,
+      rgba(83, 165, 24, 0.7) 46.59%,
+      #024d22 74.05%,
+      #004b23 140.41%
+    ),
+    #004b23;
+
+  /* Shadows/shadow-xs-skeuomorphic */
+  box-shadow: 0px 0px 0px 1px
+      var(
+        --Colors-Effects-Shadows-shadow-skeumorphic-inner-border,
+        rgba(16, 24, 40, 0.18)
+      )
+      inset,
+    0px -2px 0px 0px var(
+        --Colors-Effects-Shadows-shadow-skeumorphic-inner,
+        rgba(16, 24, 40, 0.05)
+      ) inset,
+    0px 1px 2px 0px
+      var(--Colors-Effects-Shadows-shadow-xs, rgba(16, 24, 40, 0.05));
+}
+
+.active .activeSpan {
+  color: white;
+}
+
+.active img {
+  content: url("/images/SB1Hover.svg");
 }
 
 .navLink:hover .imgOne {

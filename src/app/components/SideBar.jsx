@@ -22,9 +22,9 @@ export const SideBar = () => {
         <div className="sideBarInnerDiv flex flex-col justify-between items-start flex-1 self-stretch">
             <div className="sideBarNavlinks flex pt-[32px] flex-col items-start gap-[24px] self-stretch">
                 <ul className='flex p-[0px_16px] flex-col items-start gap-[4px] self-stretch'>
-                    <li className='navLink'>
+                    <li className='navLink active'>
                     <Image src={SB1} alt="" className='imgOne w-[24px] h-[24px]'/>
-                    <span>Dashboard</span>
+                    <span className='activeSpan'>Dashboard</span>
                     </li>
                     <li className='navLink'>
                     <Image src={SB2} alt="" className='imgTwo w-[24px] h-[24px]'/>
@@ -78,14 +78,20 @@ export const SideBar = () => {
             <div className="infoDiv flex p-[16px] flex-col items-start gap-[24px] self-stretch">
                 <ul className='navLinkFooter ps-[10px] flex flex-col items-start gap-[10px] self-stretch'>
                   <li>English</li>
+                  <a href="#">
                   <li className='navFooterLinks'>
                   <Image src={supportIcon} alt="" className='imgTen w-[24px] h-[24px]'/>
                   <span>Support</span>
                   </li>
+                  </a>
+                  
+                  <a href="#">
                   <li className='navFooterLinks'>
                   <Image src={settingIcon} alt="" className='imgTen w-[24px] h-[24px]'/>
                   <span>Settings</span>
                   </li>
+                  </a>
+                  
                 </ul>
 
                 <div className='flex pt-6 pr-8 pb-6 pl-2 items-center gap-[16px] self-stretch'>
