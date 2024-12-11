@@ -18,7 +18,7 @@ import userImage from '../../../public/images/userImage.svg'
 
 export const SideBar = () => {
   return (
-    <div className='sideBarNav flex w-[280px] items-start self-stretch'>
+    <div className='sideBarNav hidden md:flex w-[280px] items-start self-stretch'>
         <div className="sideBarInnerDiv flex flex-col justify-between items-start flex-1 self-stretch">
             <div className="sideBarNavlinks flex pt-[32px] flex-col items-start gap-[24px] self-stretch">
                 <ul className='flex p-[0px_16px] flex-col items-start gap-[4px] self-stretch'>

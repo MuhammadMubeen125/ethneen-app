@@ -11,7 +11,7 @@ import userImage from '../../../public/images/userImage.svg'
 
 export const Navbar = () => {
   return (
-    <div className='HeaderMain flex flex-col items-center self-stretch'>
+    <div className='HeaderMain hidden md:flex flex-col items-center self-stretch'>
         <div className="headerinnerDiv flex h-[72px] p-[0px_24px] justify-between items-center self-stretch">
             <div className="headerDivOne flex items-center gap-[48px]">
             <Image src={LogoEthneen} alt="" className='w-[142px] h-[32px]'/>

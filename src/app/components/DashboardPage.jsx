@@ -20,55 +20,55 @@ export const DashboardPage = () => {
             
         </div> */}
         <div className='mainSectionDashboard  flex p-[32px_0px] flex-col items-start gap-[24px] flex-1'>
-            <div className="mainHeader flex p-[0px_32px] flex-row justify-between items-start gap-[24px] self-stretch">
+            <div className="mainHeader w-[400px] md:w-full flex md:p-[0px_32px] p-[0px_20px] flex-col md:flex-row justify-between items-start gap-[24px] self-stretch">
                 <div className="mainHeadings flex min-w-[320px] flex-col items-start gap-[4px] flex-1">
                     <h5>Welcome back, Afifa</h5>
                     <p>Monitor your jobs, orders and payment history. </p>
                 </div>
-                <Link href="/dashboard" className='GreenBtn'>
+                <Link href="/dashboard" className='GreenBtn h-[42.5px] w-[200px] '>
                    <span>Upgrade to Ethneen Pro</span></Link>
             </div>
 
-            <div className="uppercardSection flex p-[0px_32px] flex-row items-start gap-[24px] self-stretch">
-                <div className="upperCard flex p-[24px] flex-col items-start gap-[12px] flex-1">
+            <div className="uppercardSection max-w-[400px] md:w-full flex p-[0px_20px] md:p-[0px_32px] flex-col md:flex-row items-start gap-[24px] self-stretch">
+                <div className="upperCard w-full flex p-[24px] flex-col items-start gap-[12px] flex-1">
                     <h2>Wallet Balance</h2>
                     <div className='numberDIvCard flex items-end gap-[16px] flex-1'>
                     <p>$166.00</p>
-                    <span className='flex  items-center text-green-500'>
-                    <Image src={greenArrow} alt="" className='w-[20px] h-[20px]'/>
+                    <span className='flex items-center text-green-500'>
+                    <Image src={greenArrow} alt="" className='w-[22px] h-[22px]'/>
 
                       12%</span>
                     </div>
                     
                 </div>
-                <div className="upperCard flex p-[24px] flex-col items-start gap-[12px] flex-1">
+                <div className="upperCard w-full flex p-[24px] flex-col items-start gap-[12px] flex-1">
                     <h2>Total Projects</h2>
                     <div className='numberDIvCard flex items-end gap-[16px] flex-1'>
                     <p>30</p>
                     <span className='flex  items-center text-red-500'>
-                    <Image src={redArrow} alt="" className='w-[20px] h-[20px]'/>
+                    <Image src={redArrow} alt="" className='w-[22px] h-[22px]'/>
 
                       2</span>
                     </div>
                     
                 </div>
-                <div className="upperCard flex p-[24px] flex-col items-start gap-[12px] flex-1">
+                <div className="upperCard w-full flex p-[24px] flex-col items-start gap-[12px] flex-1">
                     <h2>Completed Orders</h2>
                     <div className='numberDIvCard flex items-end gap-[16px] flex-1'>
                     <p>18</p>
                     <span className='flex  items-center text-green-500'>
-                    <Image src={greenArrow} alt="" className='w-[20px] h-[20px]'/>
+                    <Image src={greenArrow} alt="" className='w-[22px] h-[22px]'/>
 
                       2</span>
                     </div>
                     
                 </div>
-                <div className="upperCard flex p-[24px] flex-col items-start gap-[12px] flex-1">
+                <div className="upperCard w-full flex p-[24px] flex-col items-start gap-[12px] flex-1">
                     <h2>Active Orders</h2>
                     <div className='numberDIvCard flex items-end gap-[16px] flex-1'>
                     <p>24</p>
                     <span className='flex  items-center text-green-500'>
-                    <Image src={greenArrow} alt="" className='w-[20px] h-[20px]'/>
+                    <Image src={greenArrow} alt="" className='w-[22px] h-[22px]'/>
 
                       2</span>
                     </div>
@@ -76,7 +76,7 @@ export const DashboardPage = () => {
                 </div>
             </div>
 
-            <div className="dashStatsContainer w-full flex px-[32px] py-0 gap-[24px] self-stretch">
+            <div className="dashStatsContainer max-w-[400px] md:w-full flex-col md:flex px-[20px] md:px-[32px] py-0 gap-[24px] self-stretch">
                 <div className="orderStatDiv flex-1 flex flex-col items-start">
                     <div className="orderStateHeading w-full flex pt-5 pr-6 pb-5 pl-6">
                     <div className="orderStateHeadingText w-[434px] flex  flex-col justify-center items-start gap-[4px] flex-1">

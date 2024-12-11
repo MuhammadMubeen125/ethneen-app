@@ -13,6 +13,19 @@ body {
   font-family: "Suisse Intl", sans-serif; /* Apply font globally */
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
+/* Media query for mobile screens with max width 400px */
+@media (max-width: 400px) {
+  body,
+  html {
+    overflow-x: hidden; /* Allow scrolling if necessary */
+  }
+}
+
 .signUpSectionOne {
   background: var(--Colors-Background-bg-secondary, #f9fafb);
 }
@@ -256,6 +269,8 @@ p {
   /* Shadows/shadow-xs */
   box-shadow: 0px 1px 2px 0px
     var(--Colors-Effects-Shadows-shadow-xs, rgba(16, 24, 40, 0.05));
+  overflow-x: hidden;
+  position: relative;
 }
 
 .orderStateHeadingText h5 {
@@ -326,6 +341,17 @@ p {
   font-style: normal;
   font-weight: 500;
   line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+}
+
+.statsTableDiv {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+@media (max-width: 400px) {
+  .statsTableDiv {
+    overflow-x: scroll;
+  }
 }
 
 .custom-table th {
