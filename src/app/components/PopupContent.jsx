@@ -18,7 +18,7 @@ const PopupContent = () => {
       </div>
       <div className="searchDiv flex flex-col  items-start gap-[12px] self-stretch">
         <div className="searchInnerDiv flex p-[12px_14px] items-center justify-between self-stretch">
-          <input type="text" placeholder='What would you like Noor to write about?' name="" id="" className='w-full outline-none'/>
+          <input type="text" placeholder='What can i help with?' name="" id="" className='w-full outline-none'/>
           <Image src={arrowBtn} alt="" className='w-[40px] h-[40px]'/>
 
         </div>

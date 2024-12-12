@@ -645,6 +645,14 @@ p {
   position: relative;
 }
 
+@media (max-width: 480px) {
+  .popup {
+    min-width: auto; /* Allow the popup to shrink */
+    max-width: 90%; /* Use a percentage for smaller screens */
+    padding: 10px; /* Slightly reduce padding */
+  }
+}
+
 .close-button {
   position: absolute;
   top: 10px;
