@@ -14,12 +14,12 @@ export const DashboardPage = () => {
   return (
     <div>
         <Navbar/>
-        <div className='flex flex-row'>
+        <div className='flex flex-col md:flex-row'>
             <SideBar/>
         {/* <div className='sideBarNav flex h-[938px] w-[280px] items-start self-stretch'>
             
         </div> */}
-        <div className='mainSectionDashboard  flex p-[32px_0px] flex-col items-start gap-[24px] flex-1'>
+        <div className='mainSectionDashboard flex p-[32px_0px] flex-col items-start gap-[24px] flex-1'>
             <div className="mainHeader w-[400px] md:w-full flex md:p-[0px_32px] p-[0px_20px] flex-col md:flex-row justify-between items-start gap-[24px] self-stretch">
                 <div className="mainHeadings flex min-w-[320px] flex-col items-start gap-[4px] flex-1">
                     <h5>Welcome back, Afifa</h5>
@@ -29,7 +29,7 @@ export const DashboardPage = () => {
                    <span>Upgrade to Ethneen Pro</span></Link>
             </div>
 
-            <div className="uppercardSection max-w-[400px] md:w-full flex p-[0px_20px] md:p-[0px_32px] flex-col md:flex-row items-start gap-[24px] self-stretch">
+            <div className="uppercardSection w-[400px] md:w-full flex p-[0px_20px] md:p-[0px_32px] flex-col md:flex-row items-start gap-[24px] self-stretch">
                 <div className="upperCard w-full flex p-[24px] flex-col items-start gap-[12px] flex-1">
                     <h2>Wallet Balance</h2>
                     <div className='numberDIvCard flex items-end gap-[16px] flex-1'>
@@ -76,10 +76,10 @@ export const DashboardPage = () => {
                 </div>
             </div>
 
-            <div className="dashStatsContainer max-w-[400px] md:w-full flex-col md:flex px-[20px] md:px-[32px] py-0 gap-[24px] self-stretch">
+            <div className="dashStatsContainer w-[400px] md:w-full flex flex-col lg:flex-row px-[20px] md:px-[32px] py-0 gap-[24px] self-stretch">
                 <div className="orderStatDiv flex-1 flex flex-col items-start">
-                    <div className="orderStateHeading w-full flex pt-5 pr-6 pb-5 pl-6">
-                    <div className="orderStateHeadingText w-[434px] flex  flex-col justify-center items-start gap-[4px] flex-1">
+                    <div className="orderStateHeading w-full flex flex-col md:flex-row gap-[10px] md:gap-0 pt-5 pr-6 pb-5 pl-6">
+                    <div className="orderStateHeadingText w-[325px] md:w-[434px] flex flex-col justify-center items-start gap-[4px] flex-1">
                         <div className='flex flex-row items-center gap-[8px]'>
                             <h5>Latest Orders</h5>
                             <span className='orderCounter p-[2px_6px] items-center'>

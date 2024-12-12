@@ -197,8 +197,8 @@ p {
 }
 
 .sideBarNav {
-  height: 100vh; /* Full height of the viewport */
-  position: sticky; /* Keep the sidebar fixed */
+  /* height: 100vh;  */
+  position: sticky;
   top: 0;
   overflow: hidden;
   border-right: 1px solid var(--Colors-Border-border-secondary, #e4e7ec);
@@ -383,6 +383,23 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+}
+
+@media (max-width: 400px) {
+  .custom-table td {
+    padding: var(--spacing-lg, 12px) var(--spacing-xl, 16px); /* Reduce padding for smaller screens */
+    font-size: var(--Font-size-text-xs, 12px);
+    line-height: var(--Line-height-text-xs, 16px);
+  }
+}
+@media (max-width: 400px) {
+  .custom-table th {
+    padding: var(--spacing-lg, 12px) var(--spacing-xl, 16px); /* Reduce padding for smaller screens */
+    font-size: var(--Font-size-text-xs, 12px);
+    line-height: var(--Line-height-text-xs, 16px);
+    height: auto;
+    word-break: break-word;
+  }
 }
 
 .custom-table tr {
