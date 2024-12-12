@@ -56,7 +56,7 @@ export const Projectform = () => {
             menuOpen ? "block" : "hidden lg:flex"
           }`}
         >
-          <div className="flex items-start gap-4 opacity-60">
+          <div className="flex items-start gap-4 ">
             <img src="/images/file2Icon.svg" alt="User" />
             <div>
               <h6 className="font-bold text-lg">Project Intro</h6>
@@ -70,7 +70,7 @@ export const Projectform = () => {
               <p className="text-gray-600">Add some images to your project</p>
             </div>
           </div>
-          <div className="flex items-start gap-4 ">
+          <div className="flex items-start gap-4 opacity-60">
             <img src="/images/SaleIcon.svg" alt="Details" />
             <div>
               <h6 className="font-bold text-lg">Packages and Charges</h6>
